@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Cera Pro", sans-serif;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  padding: 30px 120px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: 1px solid #46a35880;
+  margin-bottom: 12px;
+}
+.nav_list {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: normal;
+}
+.list_item {
+  padding: 8px 0px 25px 0px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+.list_item:hover {
+  border-bottom: 3px solid #46a358;
+}
+.login_btn {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 16px;
+  background: #46a358;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  background: linear-gradient(
+    98deg,
+    rgba(245, 245, 245, 0.5) -23.46%,
+    rgba(245, 245, 245, 0.5) 107.51%
+  );
+}
+.content_text {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+.content_text_main {
+  color: #3d3d3d;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.content_text_h2 {
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 70px;
+  color: #3d3d3d;
+  margin-bottom: 5px;
+}
+.span_h2 {
+  color: #46a358;
+}
+
+.content_text_sup {
+  color: #727272;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 44px;
+  width: 84%;
+}
+
+.content_text_but {
+  padding: 10px 26px;
+  border: none;
+  border-radius: 6px;
+  background-color: #46a358;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.hero-image {
+  border: none;
+  background-image: url("./images/02.png"), url("./images/01.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 25% auto, 100% auto;
+  background-position: left 10% bottom 14px, right 8% bottom ;
+  width: 100%;
+  aspect-ratio: 507 / 450;
+  min-height: 400px;
+  flex: 1;
+}
