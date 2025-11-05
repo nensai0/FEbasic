@@ -1,16 +1,25 @@
 @use "../abstracts/" as *;
-// SHOP LAYOUT 
-.shop__layout {
-  display: grid;
-  grid-template-columns: 310px 1fr;
-  gap: 40px;
-}
-// END SHOP LAYOUT 
-
-// ASIDE 
-.shop__aside {
-  background-color: $bgc-color-one;
-  max-width: 310px;
+.shop {
+  margin-bottom: 100px;
+  &__aside {
+    background-color: $bgc-color-one;
+    max-width: 310px;
+  }
+  &__layout {
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    gap: 30px;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
 }
 .aside {
   &__nav {
@@ -46,21 +55,8 @@
     overflow: hidden;
   }
 }
-// END ASIDE 
-// SHOP 
-.shop__main {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-// END SHOP 
-
-// TOOLBAR 
-.shop__toolbar {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
+// END ASIDE
+// TOOLBAR
 .tabs {
   display: flex;
   flex-direction: row;
@@ -97,16 +93,15 @@
     font-size: $fz-14;
   }
 }
-// END TOOLBAR 
-
-// CARDS 
+// END TOOLBAR
+// CARDS
 .cards {
   display: flex;
 }
 .product__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 70px 40px;
+  gap: 70px 30px;
   justify-items: center;
   align-items: start;
 }
@@ -176,9 +171,8 @@
     left: 0px;
   }
 }
-// END CARDS 
-
-// PAGES 
+// END CARDS
+// PAGES
 .pages {
   margin-top: 90px;
   &__content {
@@ -205,11 +199,6 @@
       color: #fff;
       background-color: $text-color-green;
     }
-    &--img:hover {
-      color: $text-color-gray;
-      background-color: $bgc-color-one;
-      border-color: black;
-    }
   }
 }
-// END PAGES 
+// END PAGES
