@@ -153,11 +153,6 @@
     color: #fff;
     font-size: $fz-16;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-
-    &:hover {
-      background-color: #3b8f4b;
-      box-shadow: 0 6px 14px rgba(70, 163, 88, 0.35);
-    }
   }
   &__svg {
     cursor: pointer;
@@ -248,11 +243,6 @@
       line-height: 20px;
       text-transform: uppercase;
       transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-
-      &:hover {
-        background-color: #3b8f4b;
-        box-shadow: 0 6px 14px rgba(70, 163, 88, 0.35);
-      }
     }
   }
   &__img {
