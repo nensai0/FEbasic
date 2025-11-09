@@ -3,14 +3,14 @@
 /* 2) База: шрифты → глобал → типографика */
 @font-face {
   font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Regular.woff2") format("woff2");
+  src: url("../scss/fonts/CeraPro-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Cera Pro";
-  src: url("../fonts/CeraPro-Bold.woff2") format("woff2");
+  src: url("../scss/fonts/CeraPro-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -19,6 +19,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Cera Pro", sans-serif;
 }
 
 button {
@@ -33,11 +37,7 @@ button:hover {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  font-family: "Cera Pro", sans-serif;
   padding: 25px 120px;
-}
-
-.container__reg {
   font-family: "Cera Pro", sans-serif;
 }
 
@@ -282,7 +282,7 @@ li {
 }
 
 .shop {
-  margin-bottom: 100px;
+  margin-bottom: 146px;
 }
 .shop__aside {
   background-color: #FBFBFB;
@@ -306,10 +306,8 @@ li {
 
 .aside__nav {
   display: flex;
-  gap: 20px;
-  padding: 30px 0px 0px 30px;
+  padding: 30px;
   flex-direction: column;
-  margin-bottom: 340px;
 }
 .aside__h4 {
   color: #3D3D3D;
@@ -317,16 +315,7 @@ li {
   font-weight: 700;
   font-size: 18px;
   margin-left: -10px;
-}
-.aside__link {
-  text-decoration: none;
-  color: #3D3D3D;
-  font-family: "Cera Pro", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-}
-.aside__link:hover {
-  color: #46A358;
+  margin-bottom: 10px;
 }
 .aside__banner {
   margin-left: -30px;
@@ -335,6 +324,24 @@ li {
   display: block;
   max-width: 310px;
   overflow: hidden;
+}
+
+.asides {
+  margin-bottom: 36px;
+}
+.asides__item {
+  margin-bottom: 14px;
+}
+.asides__item--link {
+  text-decoration: none;
+  color: #3D3D3D;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.asides__item--link:hover {
+  color: #46A358;
 }
 
 .tabs {
@@ -479,6 +486,69 @@ li {
 .pages__link:hover {
   color: #fff;
   background-color: #46A358;
+}
+
+.boxs {
+  max-width: 180px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.boxs__one {
+  width: 15px;
+  height: 15px;
+  background-color: #46a358;
+  border-radius: 20px;
+}
+.boxs__two {
+  width: 15px;
+  height: 15px;
+  background-color: #46a358;
+  border-radius: 20px;
+}
+.boxs__hr {
+  width: 148px;
+  height: 4px;
+  border: none;
+  border: 2px solid #46a358;
+  position: absolute;
+  border-radius: 4px;
+  top: 5px;
+  left: 16px;
+}
+.boxs__hrr {
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  border: none;
+  border: 2px solid rgba(70, 163, 88, 0.2);
+  position: absolute;
+  border-radius: 4px;
+  top: 5px;
+  left: 181px;
+}
+
+.texture {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.texture__span {
+  color: #46a358;
+  font-weight: 700;
+}
+
+.betron {
+  color: #fff;
+  background-color: #46a358;
+  padding: 8px 26px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 46px;
 }
 
 .footer__top {
@@ -879,6 +949,7 @@ button {
   width: 300px;
 }
 .auths__subtitle {
+  font-family: "Cera Pro", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
@@ -898,6 +969,7 @@ button {
   background-color: tomato;
 }
 .auths__input {
+  font-family: "Cera Pro", sans-serif;
   width: 100%;
   height: 40px;
   margin-bottom: 16px;
@@ -950,13 +1022,14 @@ button {
   gap: 15px;
 }
 .footers__button-btn {
+  font-family: "Cera Pro", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
   width: 300px;
   height: 40px;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 13px;
   background-color: #fff;
   border: 1px solid #eaeaea;
