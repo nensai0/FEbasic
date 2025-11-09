@@ -1,0 +1,204 @@
+@use "../abstracts/" as *;
+.shop {
+  margin-bottom: 100px;
+  &__aside {
+    background-color: $bgc-color-one;
+    max-width: 310px;
+  }
+  &__layout {
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    gap: 30px;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+.aside {
+  &__nav {
+    display: flex;
+    gap: 20px;
+    padding: 30px 0px 0px 30px;
+    flex-direction: column;
+    margin-bottom: 340px;
+  }
+  &__h4 {
+    color: $text-color-gray;
+    font-family: $ff-CeraPro;
+    font-weight: $fw-700;
+    font-size: $fz-18;
+    margin-left: -10px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $text-color-gray;
+    font-family: $ff-CeraPro;
+    font-weight: $fw-400;
+    font-size: $fz-15;
+    &:hover {
+      color: $text-color-green;
+    }
+  }
+  &__banner {
+    margin-left: -30px;
+  }
+  &__img {
+    display: block;
+    max-width: 310px;
+    overflow: hidden;
+  }
+}
+// END ASIDE
+// TOOLBAR
+.tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  &__nav {
+    list-style: none;
+  }
+  &__link {
+    font-family: $ff-CeraPro;
+    font-weight: $fw-400;
+    font-size: $fz-15;
+    text-decoration: none;
+    color: $text-color-gray;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s ease;
+    &:hover {
+      color: $text-color-green;
+      border-bottom: 2px solid $text-color-green;
+    }
+  }
+}
+.sort {
+  &__span {
+    font-family: $ff-CeraPro;
+    font-weight: $fw-400;
+    font-size: $fz-15;
+    color: $text-color-gray;
+  }
+  &__select {
+    border: none;
+    background: transparent;
+    font-family: $ff-CeraPro;
+    font-weight: $fw-400;
+    font-size: $fz-14;
+  }
+}
+// END TOOLBAR
+// CARDS
+.cards {
+  display: flex;
+}
+.product__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px 30px;
+  justify-items: center;
+  align-items: start;
+}
+.product__card {
+  list-style: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-top 0.3s ease;
+  border-top: 2px solid transparent;
+  &:hover {
+    border-top: 2px solid $text-color-green;
+  }
+  &-link {
+    text-decoration: none;
+    font-family: $ff-CeraPro;
+    font-weight: $fw-400;
+    font-size: $fz-16;
+    color: $text-color-gray;
+    cursor: pointer;
+  }
+  &-title {
+    margin-bottom: 6px;
+    font-family: $ff-CeraPro;
+    font-weight: $fw-400;
+    font-size: $fz-16;
+    color: $text-color-gray;
+  }
+  &-price {
+    color: $text-color-green;
+    font-weight: $fw-700;
+    margin-right: 14px;
+    display: inline;
+  }
+  &-span {
+    color: $text-color-line-through;
+    text-decoration: line-through;
+    display: inline;
+  }
+  &-conter {
+    position: relative;
+  }
+  &-vector {
+    display: none;
+    position: absolute;
+    top: 270px;
+    left: 70px;
+  }
+  &-vector > svg {
+    margin-right: 20px;
+  }
+  &-vector svg:hover path {
+    fill: #46a358;
+  }
+  &:hover .product__card-vector {
+    display: block;
+    cursor: pointer;
+  }
+  &-sale {
+    background-color: $text-color-green;
+    padding: 4px;
+    width: fit-content;
+    font-family: $ff-CeraPro;
+    font-weight: $fw-400;
+    font-size: $fz-16;
+    color: #ffffff;
+    border: none;
+    position: absolute;
+    top: 14px;
+    left: 0px;
+  }
+}
+// END CARDS
+// PAGES
+.pages {
+  margin-top: 90px;
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  &__link {
+    text-decoration: none;
+    font-family: $ff-CeraPro;
+    color: $text-color-gray;
+    font-size: $fz-18;
+    font-weight: $fw-400;
+    padding: 10px;
+    border: 1px solid rgb(238, 234, 234);
+    border-radius: 4px;
+    background-color: $bgc-color-one;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    &:hover {
+      color: #fff;
+      background-color: $text-color-green;
+    }
+  }
+}
+// END PAGES
