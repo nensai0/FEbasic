@@ -37,6 +37,10 @@ button:hover {
   padding: 25px 120px;
 }
 
+.container__reg {
+  font-family: "Cera Pro", sans-serif;
+}
+
 li {
   list-style: none;
 }
@@ -807,7 +811,6 @@ li {
   max-width: 500px;
   margin: 0 auto;
   padding: 30px 0px;
-  font-family: "Cera Pro", sans-serif;
 }
 
 a {
