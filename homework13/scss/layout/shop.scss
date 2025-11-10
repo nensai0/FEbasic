@@ -83,12 +83,10 @@
 
   &__checkbox:checked+.asides__item--link {
     color: $text-color-green;
-    font-weight: 600;
   }
 
   &__checkbox:checked~.list__count {
     color: $text-color-green;
-    font-weight: 600;
   }
 }
 
