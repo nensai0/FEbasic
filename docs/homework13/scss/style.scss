@@ -1,0 +1,14 @@
+/* 1) Абстракции «переиспользуем» одной строкой */
+@use "abstracts" as *;
+
+/* 2) База: шрифты → глобал → типографика */
+@use "base/fonts";
+@use "base/global";
+
+
+/* 3) Лейауты (крупные блоки страницы) */
+@use "layout/header";
+@use "layout/shop";
+@use "layout/footer";
+@use "layout/product.scss";
+@use "layout/registration.scss";
