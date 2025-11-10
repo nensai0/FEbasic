@@ -29,7 +29,7 @@
   }
   &__h4 {
     color: $text-color-gray;
-    font-family: $ff-CeraPro;
+    font-family: $ff-CeraProBold;
     font-weight: $fw-700;
     font-size: $fz-18;
     margin-left: -10px;
@@ -52,7 +52,7 @@
     &--link {
       text-decoration: none;
     color: $text-color-gray;
-    font-weight: $fw-400;
+    
     font-size: $fz-15;
     display: flex;
     justify-content: space-between;
@@ -72,8 +72,6 @@
     list-style: none;
   }
   &__link {
-    font-family: $ff-CeraPro;
-    font-weight: $fw-400;
     font-size: $fz-15;
     text-decoration: none;
     color: $text-color-gray;
@@ -87,16 +85,12 @@
 }
 .sort {
   &__span {
-    font-family: $ff-CeraPro;
-    font-weight: $fw-400;
     font-size: $fz-15;
     color: $text-color-gray;
   }
   &__select {
     border: none;
     background: transparent;
-    font-family: $ff-CeraPro;
-    font-weight: $fw-400;
     font-size: $fz-14;
   }
 }
@@ -121,18 +115,15 @@
   }
   &-link {
     text-decoration: none;
-    font-family: $ff-CeraPro;
-    font-weight: $fw-400;
     font-size: $fz-16;
     color: $text-color-gray;
     cursor: pointer;
   }
   &-title {
     margin-bottom: 6px;
-    font-family: $ff-CeraPro;
-    font-weight: $fw-400;
     font-size: $fz-16;
     color: $text-color-gray;
+    font-weight: $fw-400;
   }
   &-price {
     color: $text-color-green;
@@ -168,8 +159,6 @@
     background-color: $text-color-green;
     padding: 4px;
     width: fit-content;
-    font-family: $ff-CeraPro;
-    font-weight: $fw-400;
     font-size: $fz-16;
     color: #ffffff;
     border: none;
@@ -190,10 +179,8 @@
   }
   &__link {
     text-decoration: none;
-    font-family: $ff-CeraPro;
     color: $text-color-gray;
     font-size: $fz-18;
-    font-weight: $fw-400;
     padding: 10px;
     border: 1px solid rgb(238, 234, 234);
     border-radius: 4px;

@@ -73,7 +73,6 @@
     border: 1px solid transparent;
     border-radius: 6px 0px 0px 6px;
     font-size: $fz-14;
-    font-family: $ff-CeraPro;
   }
   &-input:focus {
     border: 1px solid $text-color-green;
@@ -104,7 +103,7 @@
   &-text {
     color: $text-color-gray;
     font-size: $fz-14;
-    font-weight: $fw-400;
+    
     line-height: 22px;
   }
 }
