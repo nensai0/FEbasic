@@ -98,6 +98,7 @@ li {
   top: calc(100% + 16px);
   left: -30px;
   display: none;
+  font-weight: 400;
 }
 .header__burger-link {
   list-style: none;
