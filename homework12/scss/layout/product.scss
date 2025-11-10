@@ -1,4 +1,5 @@
 @use "../abstracts/" as *;
+
 /* SECTION PRODUCTS */
 .products {
   &__container {
@@ -55,6 +56,7 @@
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
   }
 }
+
 /* END SECTION PRODUCTS */
 
 /* SECTION BLOG */
@@ -142,4 +144,5 @@
     }
   }
 }
+
 /* END SECTION BLOG */
