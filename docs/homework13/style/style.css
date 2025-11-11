@@ -61,7 +61,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ffffff; /* можна замінити на чорний: #000 */
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
