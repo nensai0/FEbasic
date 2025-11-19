@@ -471,3 +471,22 @@
     }
   }
 }
+@media (max-width: 430px) {
+  .shop {
+    &__layout {
+      grid-template-columns: 130px 1fr;
+      gap: 18px;
+    }
+  }
+  .tabs {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .product__grid {
+    grid-template-columns: 1fr;
+  }
+  .boxs__hr {
+    width: 100px;
+    left: 14px;
+  }
+}
