@@ -1,0 +1,75 @@
+@use "variables" as *;
+// Regular
+@mixin font-regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Bold
+@mixin font-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+// HERO
+@mixin hero {
+  font-family: $font-main-b;
+  font-size: $f-size-38;
+  line-height: normal;
+  background: $gradient-textRed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// h2
+@mixin h2 {
+  color: $main-regular;
+  font-family: $font-main-b;
+  font-size: $f-size-30;
+  line-height: normal;
+}
+
+// h3
+@mixin h3 {
+  color: $main-regular;
+  font-family: $font-main-b;
+  font-size: $f-size-22;
+  line-height: normal;
+}
+
+// h3caps
+@mixin h3caps {
+  color: $main-regular;
+  font-family: $font-main-b;
+  font-size: $f-size-14;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+// h4
+
+@mixin h4 {
+  color: $main-regular;
+  font-family: $font-main-b;
+  font-size: $f-size-16;
+  line-height: normal;
+}
+
+// text
+
+@mixin fz16 {
+color: $basic-black;
+font-family: $font-main-r;
+font-size: $f-size-16;
+line-height: 26px;
+}
+@mixin fz18 {
+    color: $basic-black;
+font-family: $font-main-r;
+font-size: $f-size-18;
+line-height: 26px;
+}

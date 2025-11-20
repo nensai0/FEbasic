@@ -1,0 +1,352 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 60px 0px;
+}
+.logo {
+  display: flex;
+  gap: 4px;
+}
+.logos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.slash {
+  display: flex;
+  gap: 4px;
+  &__text {
+    color: $main-regular;
+    font-family: $font-main-r;
+    font-size: $f-size-36;
+    line-height: normal;
+  }
+}
+.top {
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 18px;
+    &-item {
+      @include m.font-bold;
+      font-size: $f-size-16;
+      color: $grey-text;
+      list-style: none;
+      padding: 5px 7px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+      &:last-child {
+        padding: 0;
+        padding-left: 7px;
+      }
+      &:nth-child(-n + 3) {
+        font-size: $f-size-12;
+      }
+      &:nth-child(-n + 3):hover {
+        background: $grey-bg;
+        cursor: pointer;
+      }
+      &:last-child:hover {
+        background: none;
+      }
+      &:last-child:hover .svg__path {
+        fill: $color-accent;
+        cursor: pointer;
+      }
+      &:last-child:hover .svg__paths {
+        cursor: pointer;
+      }
+      &:nth-child(-n + 3):active {
+        background: $color-accent;
+        color: $basic-white;
+      }
+      &:nth-child(5) {
+        @include m.font-regular;
+      }
+    }
+  }
+}
+.bot {
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    &-item {
+      @include m.font-bold;
+      color: $active-regular;
+      font-size: $f-size-16;
+      list-style: none;
+      border-bottom: 3px solid transparent;
+      transition: color 0.2s ease, border 0.2s ease;
+      &:hover {
+        color: $color-accent;
+        border-bottom: 3px solid $color-accent;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.navigation {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__left {
+      margin-top: 30px;
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+  .top {
+    &__nav {
+      margin-top: -110px;
+    }
+  }
+  .bot {
+    &__nav {
+      margin-top: 30px;
+    }
+  }
+}
+@media (max-width: 430px) {
+  .navigation {
+    display: block;
+  }
+  .header {
+    padding: 0px;
+    &__left {
+      width: 430px;
+      padding: 0px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+  .logo {
+    margin-top: 30px;
+  }
+  .slash__text {
+    font-size: $f-size-20;
+  }
+  .whites {
+    display: none;
+  }
+  .top {
+    background: $grey-bg;
+    &__nav {
+      padding: 10px 15px;
+      background: $grey-bg;
+      margin-top: -93px;
+      width: 430px;
+      display: flex;
+      justify-content: normal;
+      &-item {
+        &:nth-child(5) {
+          display: none;
+        }
+        &:nth-child(7) {
+          margin-left: 130px;
+        }
+        &:nth-child(9) {
+          display: none;
+        }
+        &:nth-child(3) {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+  .bot {
+    display: none;
+  }
+  .logoss {
+    max-width: 70px;
+    max-height: 25px;
+  }
+  .logosss {
+    max-width: 70px;
+    max-height: 4px;
+  }
+  .slashh {
+    max-width: 12px;
+    max-height: 26px;
+  }
+  .navigation {
+    position: relative;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -336px;
+    text-align: right;
+  }
+  .nav__list {
+    padding: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+    &-item {
+      @include m.font-bold;
+      list-style: none;
+      padding: 7px 112px;
+      background: $grey-bg;
+      margin-bottom: 15px;
+      border-radius: 12px;
+    }
+    &-link {
+      text-decoration: none;
+      color: $active-regular;
+    }
+  }
+  .nav__check:checked + .nav__menu {
+    border-radius: 8px;
+    background: $grey-separator;
+  }
+  .nav__check:checked ~ .nav {
+    display: block;
+  }
+  .nav__check {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+  }
+  .nav__menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 375px) {
+  .navigation {
+    display: block;
+  }
+  .header {
+    padding: 0px;
+    &__left {
+      width: 375px;
+      padding: 0px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+  .logo {
+    margin-top: 30px;
+  }
+  .slash__text {
+    font-size: $f-size-20;
+  }
+  .whites {
+    display: none;
+  }
+  .top {
+    background: $grey-bg;
+    &__nav {
+      padding: 10px 15px;
+      background: $grey-bg;
+      margin-top: -93px;
+      width: 375px;
+      display: flex;
+      justify-content: space-around;
+      &-item {
+        &:nth-child(7) {
+          margin-left: 0px;
+        }
+        &:nth-child(5) {
+          display: none;
+        }
+        &:nth-child(9) {
+          display: none;
+        }
+        &:nth-child(3) {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+  .bot {
+    display: none;
+  }
+  .logoss {
+    max-width: 70px;
+    max-height: 25px;
+  }
+  .logosss {
+    max-width: 70px;
+    max-height: 4px;
+  }
+  .slashh {
+    max-width: 12px;
+    max-height: 26px;
+  }
+  .navigation {
+    position: relative;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -310px;
+    text-align: right;
+  }
+  .nav__list {
+    padding: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+    &-item {
+      @include m.font-bold;
+      list-style: none;
+      padding: 7px 112px;
+      background: $grey-bg;
+      margin-bottom: 15px;
+      border-radius: 12px;
+    }
+    &-link {
+      text-decoration: none;
+      color: $active-regular;
+    }
+  }
+  .nav__check:checked + .nav__menu {
+    border-radius: 8px;
+    background: $grey-separator;
+  }
+  .nav__check:checked ~ .nav {
+    display: block;
+  }
+  .nav__check {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+  }
+  .nav__menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+}
