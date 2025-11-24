@@ -16,6 +16,11 @@
   }
 ul.nav:nth-child(1) {
   .nav__item-link {
+    @include m.font-bold;
+    font-size: $f-size-12;
+    color: $grey-text;
+    line-height: normal;
+    letter-spacing: 1px;
     border-radius: 8px;
   }
   .nav__item-link:hover {
@@ -325,7 +330,7 @@ ul.nav:nth-child(3) {
     &__top {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: baseline;
       background: $grey-bg;
       padding: 10px 15px;
       background-color: rgba(245, 245, 250, 0.2) ;

@@ -13,6 +13,11 @@
   }
 ul.nav:nth-child(1) {
   .nav__item-link {
+    @include m.font-bold;
+    font-size: $f-size-12;
+    color: $grey-text;
+    line-height: normal;
+    letter-spacing: 1px;
     border-radius: 8px;
   }
   .nav__item-link:hover {
