@@ -55,6 +55,7 @@ ul.nav:nth-child(3) {
     color: $color-accent;
   }
 }
+
 .header__facebook:hover .header__facebooks {
   cursor: pointer;
   fill: $color-accent;
@@ -468,6 +469,7 @@ ul.nav:nth-child(3) {
       border-bottom: 2px solid $color-accent;
     }
 }
+
 }
 @media (min-width: 1440px) {
   .header__left {

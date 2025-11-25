@@ -1,0 +1,82 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.team__text {
+  @include m.font-bold;
+  font-size: $f-size-38;
+  line-height: normal;
+  background: var(
+    --Gradient-Red-Text,
+    linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 60px;
+}
+.tableses {
+  margin-bottom: 60px;
+  &__top {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    &.img1 {
+      background: lightgray 50% center / cover no-repeat
+        url("../img/Team/Team-1.jpg");
+    }
+    &.img2 {
+      background: lightgray 50% center / cover no-repeat
+        url("../img/Team/Team-2.jpg");
+    }
+    &.img3 {
+      background: lightgray 50% center / cover no-repeat
+        url("../img/Team/Team-3.jpg");
+    }
+    &.img4 {
+      background: lightgray 50% center / cover no-repeat
+        url("../img/Team/Team-4.jpg");
+    }
+    &.img5 {
+      background: lightgray 50% center / cover no-repeat
+        url("../img/Team/Team-5.jpg");
+    }
+    &.img6 {
+      background: lightgray 50% center / cover no-repeat
+        url("../img/Team/Team-6.jpg");
+    }
+  }
+  &__bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left {
+    &-name {
+      @include m.font-bold;
+      font-size: $f-size-16;
+      color: $main-regular;
+    }
+    &-prof {
+      @include m.font-regular;
+      font-size: $f-size-14;
+      color: $grey-text;
+    }
+  }
+}
+.tableses__right:hover {
+    cursor: pointer;
+}
+.tableses__right:hover .tableses__right-path {
+  stroke: $color-accent;
+}
+
+@media (max-width: 430px) {
+  .tableses {
+    margin-bottom: 30px;
+  }
+  .team__text {
+    font-size: $f-size-30;
+    margin-bottom: 30px;
+  }
+}
