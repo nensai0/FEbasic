@@ -1,6 +1,10 @@
 @use "../base/variables" as *;
 @use "../base/mixins" as m;
 
+.page__about .header__mid-p::after {
+  content: 'about us';
+}
+
 .about__information {
   &-h2 {
     @include m.h2;

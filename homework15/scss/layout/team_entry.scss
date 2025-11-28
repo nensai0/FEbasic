@@ -1,6 +1,9 @@
 @use "../base/variables" as *;
 @use "../base/mixins" as m;
 
+.page__team .header__mid-p::after {
+  content: 'team';
+}
 .entry {
     display: flex;
     align-items: flex-start;

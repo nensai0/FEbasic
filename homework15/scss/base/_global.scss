@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as m;
 * {
     box-sizing: border-box;
     margin: 0;
@@ -66,3 +67,16 @@
     }
   }
 }
+/* базовый стиль текста возле слеша */
+.header__mid-p::after {
+  content: ' ';      // текст по умолчанию, например для services.html
+  @include m.font-regular;
+  font-size: $f-size-36;
+}
+
+
+
+
+
+
+

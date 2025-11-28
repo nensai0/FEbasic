@@ -66,7 +66,7 @@ ul.nav:nth-child(3) {
   color: $basic-white;
 }
 .header__dark {
-    background: $main-regular;
+  background: $main-regular;
 }
 .headers__link {
   text-decoration: none;
@@ -82,6 +82,11 @@ ul.nav:nth-child(3) {
 }
 .headers__link-dark {
   color: $basic-white;
+}
+.header__burger-labelDark span {
+  width: 18px;
+  height: 2px;
+  border: 1.5px solid $basic-white;
 }
 @media (max-width: 375px) {
   .navigation {
@@ -146,11 +151,6 @@ ul.nav:nth-child(3) {
         flex-direction: column;
         gap: 4px;
         padding: 8px;
-      }
-      &-label span {
-        width: 18px;
-        height: 2px;
-        border: 1.5px solid black;
       }
       &-input {
         display: none;
@@ -263,11 +263,6 @@ ul.nav:nth-child(3) {
         gap: 4px;
         padding: 8px;
       }
-      &-label span {
-        width: 18px;
-        height: 2px;
-        border: 1.5px solid black;
-      }
       &-input {
         display: none;
       }
@@ -379,11 +374,6 @@ ul.nav:nth-child(3) {
         flex-direction: column;
         gap: 4px;
         padding: 8px;
-      }
-      &-label span {
-        width: 18px;
-        height: 2px;
-        border: 1.5px solid black;
       }
       &-input {
         display: none;

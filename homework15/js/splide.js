@@ -18,3 +18,14 @@ splide.on("move", function (newIndex) {
   buttons.forEach((btn) => btn.classList.remove("active"));
   buttons[newIndex].classList.add("active");
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('.testimonials', {
+    type: 'loop',
+    perPage: 1,
+    pagination: true,
+    arrows: false,
+    autoplay: true,
+    interval: 5000,
+  }).mount();
+});
