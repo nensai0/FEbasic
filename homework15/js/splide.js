@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     perPage: 1,
     pagination: true,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     interval: 5000,
   }).mount();
 });
