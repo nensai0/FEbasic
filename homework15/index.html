@@ -30,10 +30,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               fill="none">
               <g clip-path="url(#clip0_22728_11339)">
                 <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
-                <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+                <path class="hero__sections-svgg" d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
               </g>
               <defs>
-                <clipPath id="clip0_22728_11339">
+                <clipPath  id="clip0_22728_11339">
                   <rect width="42" height="42" fill="white" />
                 </clipPath>
               </defs>
@@ -42,6 +42,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
         
         <div class="hero__menu">
+          
+          <div class="contra">
           <div class="menu__left">
             <ul class="menu__left-ul">
               <li class="menu__left-li">
@@ -58,7 +60,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </li>
             </ul>
           </div>
-          <div class="container">
+          <div class="container container__flexs">
           <div class="menu__hr">
             <hr class="menu__hr-r" />
           </div>
@@ -72,6 +74,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </p>
           </div>
         </div>
+        </div>
+
+
+
         <div class="container">
         <div class="hero__icons">
           <div class="icons__top">
@@ -349,7 +355,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </div>
   </section>
   <!-- <div class="container"> -->
-<div class="container">
+<div class="container container__splide">
     <section class="testimonials splide" aria-label="Команда">
       <div class="splide__track">
         <ul class="splide__list">
@@ -376,11 +382,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <!-- 
             СЛАЙД 2: фото справа, текст слева -->
           <li class="splide__slide">
-            <article class="testi testi--reverse">
+            <article class="testi ">
               <div class="testi__photo">
                 <img src="./img/Team/Team-2.jpg" alt="Інший партнер" />
               </div>
-
               <div class="testi__content">
                 <a href="./team.html" class="testi__tag">Команда › </a>
                 <h3 class="testi__title">
@@ -415,8 +420,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
     </section>
 </div>
+<p class="main__logo-p">they already trust us</p>
     <div class="main__logo">
-      <p class="main__logo-p">they already trust us</p>
       <div class="main__logos main__logos-hillel">
         <img src="./img/Logos/hillel.png" alt="hillel" class="main__logos-img main__logos-hillels" />
       </div>
@@ -451,18 +456,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <img src="./img/Logos/artprint.png" alt="artprint" class="main__logos-img main__logos-arts" />
       </div>
       <div class="main__logos main__logos-ultimate">
-        <img src="./img/Logos/ultimatecard.png" alt="ultimatecard" class="main__logos-ultimates" />
+        <img src="./img/Logos/ultimatecard.png" alt="ultimatecard" class="main__logos-img main__logos-ultimates" />
       </div>
     </div>
     
     <div class="publications publications__index">
-      <div class="container">
+      <div class="container container__splide">
+        
       <div class="publications__links">
         <a href="./publications.html" class="publications__links-main">Publications > </a>
       </div>
       <h3 class="publications__title-main">We have something to tell</h3>
-
-      <div class="publications__cards publications__cards-index">
+      
+      <div class="public__card">
+        <div class="publications__cards publications__cards-index">
         <div class="blox">
           <a href="#" class="blox__link">
             <img src="./img/Publications/Publication-1.jpg" alt="phone" />
@@ -504,7 +511,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
       <div class="publications__cards publications__cards-index">
         <div class="blox">
-          <a href="#" class="blox__link">
+          <a href="#" class="blox__link blox__link-index">
             <img src="./img/Publications/Publication-3.jpg" alt="phone" />
           </a>
         </div>
@@ -521,13 +528,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </p>
         </div>
       </div>
+      </div>
     </div>
-    <div class="container conrainer-hr">
+  </div>
+   <div class="container container-hr">
     <div class="main__hr">
       <hr class="main__hr-r" />
     </div>
-  </div>
-  </div>
+   </div>
   <!-- FOOTER  -->
   <div data-include="footer">We turn over the idea of legal services</div>
   <!-- END FOOTER  -->
