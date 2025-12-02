@@ -1,0 +1,22 @@
+@use "variables" as *;
+// Regular
+@mixin font-regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Bold
+@mixin font-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+// h2
+@mixin h2 {
+  color: $main-regular;
+  font-family: $font-main-b;
+  font-size: $f-size-30;
+  line-height: normal;
+}

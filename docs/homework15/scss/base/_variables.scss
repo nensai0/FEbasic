@@ -1,0 +1,50 @@
+// VARIABLES FONT FAMILY 
+$font-main-r: "Montserrat Regular", sans-serif;
+$font-main-b: "Montserrat Bold", sans-serif;
+
+// FONT SIZE
+$f-size-12: 12px;
+$f-size-14: 14px;
+$f-size-16: 16px;
+$f-size-18: 18px;
+$f-size-19: 19px;
+$f-size-20: 20px;
+$f-size-21: 21px;
+$f-size-22: 22px;
+$f-size-24: 24px;
+$f-size-30: 30px;
+$f-size-36: 36px;
+$f-size-38: 38px;
+$f-size-46: 46px;
+$f-size-86: 86px;
+$f-size-96: 96px;
+
+//COLORS BASIC
+$basic-black: #000;
+$basic-white: #fff;
+
+// COLORS MAIN 
+$main-regular: rgba(50, 50, 100, 1);
+$main-alt: rgba(70, 70, 110, 1);
+$main-soft: rgba(104, 104, 135, 1);
+
+// COLORS ACCENT
+$color-accent: rgba(240, 20, 90, 1);
+
+// COLORS ACTIVE
+$active-regular: rgba(36, 163, 255, 1);
+$active-hover: rgba(0, 133, 255, 1);
+$active-active: rgba(0, 108, 207, 1);
+
+// COLORS GREY
+$grey-bg: rgba(245, 245, 250, 1);
+$grey-bg-alt: rgba(237, 237, 247, 1);
+$grey-text: rgba(179, 179, 186, 1);
+$grey-separator: rgba(230, 230, 240, 1);
+
+// COLORS GRADIENT
+$gradient-regular: linear-gradient(129deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+$gradient-soft: linear-gradient(42deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+$gradient-red: linear-gradient(323deg, #F0145A 6.7%, #693264 70.36%);
+$gradient-superSoft: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$gradient-textRed: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
