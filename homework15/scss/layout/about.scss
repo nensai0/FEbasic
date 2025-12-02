@@ -408,6 +408,10 @@
   }
 }
 @media (max-width:430px) {
+  .page__about .header__mid-p::after {
+  content: 'about us';
+  font-size: 20px;
+}
     .container {
         padding: 30px;
     }

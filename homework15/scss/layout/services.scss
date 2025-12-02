@@ -1,0 +1,87 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.page__services .header__mid-p::after {
+  content: "services";
+}
+.grids__tops:hover {
+    cursor: pointer;
+    background: #E7E7F2;
+}
+.section__servic {
+  background: $gradient-superSoft;
+  &-h4 {
+    @include m.font-bold;
+    font-size: $f-size-30;
+    background: var(
+      --Gradient-Red-Text,
+      linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.grids {
+    margin-top: 30px;
+    &__tops {
+        padding: 14px;
+        border-radius: 24px;
+        background: $basic-white;
+        max-width: 92px;
+        margin-bottom: 30px;
+        text-align: center;
+        &-link:hover {
+            cursor: pointer;
+        }
+    }
+    &__bots {
+        &-title {
+            color: $active-regular;
+            @include m.font-bold;
+            font-size: $f-size-22;
+            margin-bottom: 15px;
+        }
+        &-text {
+            color: $basic-white;
+            @include m.font-regular;
+            font-size: $f-size-16;
+            line-height: 26px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .topser {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+    }
+    .grids {
+        margin-top: 60px;
+    }
+}
+@media (min-width: 1024px) {
+    .topser {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+    .grids {
+        margin-top: 60px;
+    }
+}
+@media (min-width: 1440px) {
+    .topser {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+    .grids {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .section__servic {
+        padding-top: 60px;
+    }
+}

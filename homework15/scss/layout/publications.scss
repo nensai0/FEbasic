@@ -121,11 +121,15 @@
 
 @media (min-width: 375px) {
   .blox__link img {
-    width: 315px;
+    width: 100%;
   }
 }
 
 @media (max-width: 425px) {
+  .page__publications .header__mid-p::after {
+  content: 'publications';
+  font-size: 20px;
+}
   .container__publications {
    margin-top: 30px;
   }
@@ -133,13 +137,13 @@
 
 @media (min-width: 425px) {
   .blox__link img {
-    width: 375px;
+    width: 100%;
   }
 }
 
 @media (min-width: 768px) {
   .blox__link img {
-    width: 309px;
+    width: 100%;
   }
   .publications {
     padding: 30px 0px;
@@ -153,7 +157,7 @@
 
 @media (min-width: 1024px) {
   .blox__link img {
-    width: 281.33px;
+    width: 100%;
   }
   .publications {
     padding: 30px 0px;
