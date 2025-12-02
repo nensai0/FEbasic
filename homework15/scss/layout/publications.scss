@@ -1,5 +1,8 @@
 @use "../base/variables" as *;
 @use "../base/mixins" as m;
+img {
+  object-fit: cover;
+}
 .page__publications .header__mid-p::after {
   content: 'publications';
 }
@@ -53,12 +56,20 @@
   grid-template-rows: 1fr;
   grid-column-gap: px;
   grid-row-gap: 30px;
-
+  &__links {
+    &-main:hover {
+      color: $active-hover;
+    }
+  }
   &__cards {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     background: $basic-white;
   }
+}
+.blox:hover img {
+  -webkit-box-shadow: 0px 0px 10px 0px #000000; 
+  box-shadow: 0px 0px 10px 0px #000000;
 }
 .blox1 {
   padding: 30px;
@@ -171,7 +182,7 @@
 
 @media (min-width: 1440px) {
   .blox__link img {
-    width: 420px;
+    width: 100%;
   }
   .container__publications {
   padding: 0px 60px;
@@ -181,7 +192,7 @@
 
 @media (min-width: 1920px) {
   .blox__link img {
-    width: 513.33px;
+    width: 100%;
   }
     .container__publications {
   padding: 0px 160px;

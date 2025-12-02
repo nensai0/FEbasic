@@ -178,6 +178,9 @@
     font-size: $f-size-14;
     letter-spacing: 1px;
     text-transform: uppercase;
+    &:hover {
+      color: $active-hover;
+    }
   }
   &-h3 {
     @include m.font-bold;

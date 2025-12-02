@@ -1,0 +1,241 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.entrys {
+  &__img img {
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    &-h4 {
+      color: $main-regular;
+      @include m.font-bold;
+      font-size: $f-size-20;
+      margin-bottom: 15px;
+    }
+    &-p {
+      color: $grey-text;
+      @include m.font-bold;
+      font-size: $f-size-12;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+}
+.haupts__hr {
+  padding: 30px 0;
+  &-r {
+    border: 2px solid $grey-separator;
+  }
+}
+.textys {
+  &__p {
+    color: $basic-black;
+    @include m.font-regular;
+    font-size: $f-size-16;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+}
+.titles {
+  margin-bottom: 30px;
+  &__h3 {
+    @include m.font-bold;
+    font-size: 30px;
+    background: var(
+      --Gradient-Red-Text,
+      linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.subtextys {
+  margin-bottom: 30px;
+  &__p {
+    color: $main-alt;
+    @include m.font-bold;
+    font-size: $f-size-16;
+    margin-bottom: 15px;
+  }
+  &__ul {
+    &-li {
+      color: $basic-black;
+      font-size: $f-size-18;
+      @include m.font-regular;
+    }
+  }
+  &__pi {
+    color: $basic-black;
+    @include m.font-regular;
+    line-height: 26px;
+  }
+}
+.images {
+  margin-bottom: 30px;
+  &__img {
+    margin-bottom: 30px;
+  }
+  &__p {
+    text-align: center;
+    color: $grey-text;
+    @include m.font-regular;
+    font-size: $f-size-14;
+    line-height: 22px;
+  }
+}
+.substext {
+  &__p {
+    color: $basic-black;
+    @include m.font-regular;
+    line-height: 26px;
+    font-size: $f-size-16;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:nth-child(2) {
+      color: $main-regular;
+      @include m.font-bold;
+      font-size: $f-size-16;
+    }
+  }
+}
+.haupts__links {
+  margin-bottom: 60px;
+}
+.haupts__ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  &-li {
+    padding: 9px;
+    background: $grey-bg;
+    border-radius: 12px;
+    list-style: none;
+  }
+}
+.container__splides-public {
+  background: $grey-bg;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding-top: 30px;
+}
+@media (max-width: 375px) {
+  .entrys {
+    &__img img {
+      max-width: 315px;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+  .images {
+    text-align: center;
+    &__img img {
+      max-width: 315px;
+      max-height: 196px;
+      object-fit: cover;
+    }
+  }
+}
+@media (min-width: 425px) {
+  .entrys {
+    &__img img {
+      max-width: 315px;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+  .images {
+    text-align: center;
+    &__img img {
+      max-width: 315px;
+      max-height: 196px;
+      object-fit: cover;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .entrys {
+    &__img img {
+      max-width: 648px;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+  .images {
+    text-align: center;
+    &__img img {
+      max-width: 640px;
+      max-height: 398px;
+      object-fit: cover;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .entrys {
+    &__img {
+        text-align: center;
+    }
+    &__img img {
+      max-width: 904px;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+  .images {
+    text-align: center;
+    &__img img {
+      max-width: 640px;
+      max-height: 398px;
+      object-fit: cover;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .publics {
+    padding-top: 60px;
+  }
+  .entrys {
+    &__img {
+        text-align: center;
+    }
+    &__img img {
+      max-width: 1080px;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+  .images {
+    text-align: center;
+    &__img img {
+      max-width: 640px;
+      max-height: 398px;
+      object-fit: cover;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .publics {
+    padding-top: 60px;
+  }
+  .entrys {
+    &__img {
+        text-align: center;
+    }
+    &__img img {
+      max-width: 1360px;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+  .images {
+    text-align: center;
+    &__img img {
+      max-width: 640px;
+      max-height: 398px;
+      object-fit: cover;
+    }
+  }
+}

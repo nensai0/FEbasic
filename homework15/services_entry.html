@@ -52,6 +52,47 @@
                             field of information technology in Ukraine.</p>
                         <button class="commerce__bot-btn">Free consultation</button>
                         <hr class="commerce__bot-hr">
+                        <!-- МОДАЛЬНОЕ ОКНО -->
+                          <div class="modal" id="consult-modal">
+  <div class="modal__overlay">
+    <div class="modal__window">
+      <button class="modal__close" type="button">&times;</button>
+
+      <h3 class="modal__title">We would like to help you</h3>
+
+      <form class="modal__form">
+        <input
+          type="text"
+          class="modal__input"
+          placeholder="Name"
+        />
+
+        <textarea
+          class="modal__input modal__textarea"
+          placeholder="Message"
+        ></textarea>
+
+        <p class="modal__subtitle">HOW TO ANSWER YOU?</p>
+
+        <input
+          type="tel"
+          class="modal__input"
+          placeholder="Phone number"
+        />
+        <input
+          type="email"
+          class="modal__input"
+          placeholder="Email"
+        />
+
+        <button class="modal__submit" type="submit">
+          Send message
+        </button>
+      </form>
+    </div>
+  </div>
+                          </div>    
+                        <!-- МОДАЛЬНОЕ ОКНО  -->
                     </div>
                 </div>
                 <h4 class="commerce__h4">Services in this area:</h4>
@@ -98,7 +139,7 @@
         <div class="public__card">
           <div class="publications__cards publications__cards-index">
             <div class="blox">
-              <a href="#" class="blox__link">
+              <a href="./publications.html" class="blox__link">
                 <img src="./img/Publications/Publication-1.jpg" alt="phone" />
               </a>
             </div>
@@ -116,7 +157,7 @@
           </div>
           <div class="publications__cards publications__cards-index">
             <div class="blox">
-              <a href="#" class="blox__link">
+              <a href="./publications.html" class="blox__link">
                 <img src="./img/Publications/Publication-2.jpg" alt="phone" />
               </a>
             </div>
@@ -138,7 +179,7 @@
           </div>
           <div class="publications__cards publications__cards-index">
             <div class="blox">
-              <a href="#" class="blox__link blox__link-index">
+              <a href="./publications.html" class="blox__link blox__link-index">
                 <img src="./img/Publications/Publication-3.jpg" alt="phone" />
               </a>
             </div>
@@ -167,6 +208,7 @@
     <!-- END FOOTER  -->
     <script src="./js/include.js"></script>
     <script src="./js/active.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

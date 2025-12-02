@@ -47,19 +47,15 @@
     position: relative;
     padding-left: 28px;
     margin-bottom: 10px;
-
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
     line-height: 26px;
-    color: $color-accent;
+    
 
     &::before {
       content: counter(list-counter) ".";
       position: absolute;
       left: 0;
       top: 0;
-      font-family: "Montserrat", sans-serif;
+      @include m.font-bold;
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
