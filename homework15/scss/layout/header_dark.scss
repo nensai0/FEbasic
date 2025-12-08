@@ -3,6 +3,7 @@
 .nav {
     &__item {
       list-style: none;
+
       &-link {
          @include m.font-regular;
          color: $grey-text;
@@ -307,6 +308,9 @@ ul.nav:nth-child(3) {
     gap: 14px;
   }
   .nav svg {
+    display: none;
+  }
+  .navs__items {
     display: none;
   }
 }

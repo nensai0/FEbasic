@@ -292,6 +292,9 @@ ul.nav:nth-child(3) {
   .nav svg {
     display: none;
   }
+  .navs__items {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .navigation {

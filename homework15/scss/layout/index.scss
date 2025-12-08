@@ -299,9 +299,6 @@
 }
 .publications__cards-index {
   margin-bottom: 30px;
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 .main__hr-r {
   border: 2px solid $grey-separator;
@@ -390,11 +387,24 @@
     align-items: center;
     max-width: 430px;
     height: 120px;
+    &:first-child {
+    border-top-left-radius: 12px;
+    }
+    &:nth-child(4) {
+      border-top-right-radius: 12px;
+    }
+    &:nth-child(9) {
+      border-bottom-left-radius: 12px;
+    }
+    &:nth-child(12) {
+      border-bottom-right-radius: 12px;
+    }
     &-img {
       max-width: 430px;
       height: 120px;
     }
   }
+
   .public__card {
     display: grid;
     grid-template-columns: repeat(3, 520px);
