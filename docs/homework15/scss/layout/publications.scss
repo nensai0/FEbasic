@@ -62,9 +62,8 @@ img {
     }
   }
   &__cards {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
     background: $basic-white;
+    border-radius: 8px;
   }
 }
 .blox:hover img {
