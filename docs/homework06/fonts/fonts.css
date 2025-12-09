@@ -1,6 +1,0 @@
-@font-face {
-  font-family: 'Cera Pro';              /* название, как ты будешь использовать */
-  src: url('./CeraPro-Regular.woff2') format('woff2');
-  font-weight: 400;                   /* можно указать 700 для bold */
-  font-style: normal;
-}
